@@ -9,7 +9,7 @@
 
 #include "ad5593.h"
 
-#define AUXIO_VERSION			"v0.1"
+#define AUXIO_VERSION			"v0.2"
 #define I2C_BUS_FRIENDLY_NAME	"I2C3"
 #define I2C_SALVE_ID			0x10
 
@@ -54,7 +54,7 @@ void PrintUsage(PCWSTR name, const char* version)
         L"AuxIO: Command line auxiliary IO test utility, Version %hs\n"
         L"Usage: %s -p <Pin Number> -f <Function> (-v <Value> | -u <Voltage>])\n"
         L"\n"
-        L"Pin Number      IO pin select, number between 1..8\n"
+        L"Pin Number      IO pin select, number between 0..7\n"
         L"Function        IO function select must be one of following:\n"
         L"                  adc             : ADC input\n"
         L"                  dac             : DAC output\n"
@@ -134,11 +134,10 @@ int main(Array<String^>^ args)
 			pin = static_cast<unsigned char>(
 				wcstoul(arg2, &endptr, 0));
 
-			if (pin < 1 || pin > 8) {
+			if (pin < 0 || pin > 7) {
 				std::wcerr << L"Invalid Pin Number\n";
 				return 1;
 			}
-			pin -= 1;
 
 			break;
 		case L'f':
