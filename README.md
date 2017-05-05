@@ -17,10 +17,10 @@ This tool is open source and released under the [MIT license], it’s source cod
 
 Usage:
  ```
-AuxIO: Command line auxiliary IO test utility, Version v0.1
-Usage: AuxIO_v01.exe -p <Pin Number> -f <Function> (-v <Value> | -u <Voltage>])
+AuxIO: Command line auxiliary IO test utility, Version v0.2
+Usage: AuxIO_v02.exe -p <Pin Number> -f <Function> (-v <Value> | -u <Voltage>])
 
-Pin Number      IO pin select, number between 1..8
+Pin Number      IO pin select, number between 0..7
 Function        IO function select must be one of following:
                   adc             : ADC input
                   dac             : DAC output
@@ -49,8 +49,8 @@ Value           Function dependent value 0..4095
 Voltage         Function dependent value 0.0 .. 5.0 Volt
 
 Examples:
-AuxIO_v01.exe -p 1 -f dac -v 2.5
-AuxIO_v01.exe -p 2 -f gpio-out -u 1
+AuxIO_v02.exe -p 1 -f dac -v 2.5
+AuxIO_v02.exe -p 2 -f gpio-out -u 1
  ```
 
 [AD5593R]: http://www.analog.com/AD5593R
