@@ -18,7 +18,7 @@ This tool is open source and released under the MIT license [5], it’s source c
 Usage:
 
 AuxIO: Command line auxiliary IO test utility, Version v0.2
-Usage: AuxIO_v02.exe -p <Pin Number> -f <Function> (-v <Value> | -u <Voltage>])
+Usage: AuxIO_v03.exe -p <Pin Number> -f <Function> (-v <Value> | -u <Voltage>])
 
 Pin Number      IO pin select, number between 0..7
 Function        IO function select must be one of following:
@@ -49,8 +49,8 @@ Value           Function dependent value 0..4095
 Voltage         Function dependent value 0.0 .. 5.0 Volt
 
 Examples:
-AuxIO_v02.exe -p 1 -f dac -v 2.5
-AuxIO_v02.exe -p 2 -f gpio-out -u 1
+AuxIO_v03.exe -p 1 -f dac -v 2.5
+AuxIO_v03.exe -p 2 -f gpio-out -u 1
 
 
 [1] http://www.analog.com/AD5593R

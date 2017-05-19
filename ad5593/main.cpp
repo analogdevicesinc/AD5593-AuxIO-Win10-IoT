@@ -9,7 +9,7 @@
 
 #include "ad5593.h"
 
-#define AUXIO_VERSION			"v0.2"
+#define AUXIO_VERSION			"v0.3"
 #define I2C_BUS_FRIENDLY_NAME	"I2C3"
 #define I2C_SALVE_ID			0x10
 

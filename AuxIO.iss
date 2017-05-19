@@ -3,7 +3,7 @@
 [Setup]
 AppId={{D06C1142-29F1-4F9F-99C5-CAF437C4CB51}}
 AppName={#MyAppName}
-AppVersion="0.2"
+AppVersion="0.3"
 AppPublisher="Analog Devices, Inc."
 AppPublisherURL="http://www.analog.com"
 AppSupportURL="https://ez.analog.com/"
@@ -21,7 +21,7 @@ MinVersion=10.0
 Name: "english"; MessagesFile: "compiler:Default.isl"
 
 [Files]
-Source: "x64/Release/AuxIO_v02.exe"; DestDir: "{app}"; Flags: ignoreversion;  Check: IsWin64
+Source: "x64/Release/AuxIO_v03.exe"; DestDir: "{app}"; Flags: ignoreversion;  Check: IsWin64
 Source: "x64/LICENSE.txt"; DestDir: "{app}"; Flags: ignoreversion;
 Source: "Readme.txt"; DestDir: "{app}"; Flags: isreadme
 Source: "x64/vc_redist.x64.exe"; DestDir: {tmp}; Flags: deleteafterinstall
