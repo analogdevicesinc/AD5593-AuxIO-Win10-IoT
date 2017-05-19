@@ -147,6 +147,7 @@ void io::function(IoFunction func)
 	switch (func)
 	{
 	case ADC:
+		ClearBit(dac_en);
 		SetBit(adc_en);
 		ClearBit(gpio_out);
 		ClearBit(gpio_in);
